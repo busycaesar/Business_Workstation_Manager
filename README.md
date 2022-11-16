@@ -1,6 +1,6 @@
 # Business_Workstation_Management
 
-## This is the final project of OOP 244(Introduction to Object Oriented Programming), which is a CLI application for the Management of Seneca's Library which can Add new, Remove, Checkout and/or return publications and also update/manipulate the database accordingly.
+## This is the final project of OOP 345(Object-Oriented Software Development Using C++)
 
 # Warning
 
