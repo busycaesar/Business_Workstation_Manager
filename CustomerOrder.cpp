@@ -1,3 +1,11 @@
+// Name: DEV JIGISHKUMAR SHAH
+// Seneca Student ID: 131623217
+// Seneca email: djshah11@myseneca.ca
+// Date of completion: 25/11/2022
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
 #include"CustomerOrder.h"
 
 namespace sdds
