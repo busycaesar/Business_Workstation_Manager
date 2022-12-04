@@ -54,28 +54,21 @@ namespace sdds
 
 	}
 
-	size_t Station::getNextSerialNumber()
-	{
-
-		d_next_serial_number++;
-
-		return d_next_serial_number - 1;
-
-	}
-
 	void Station::display(std::ostream& os, bool full) const
 	{
 
 		os << std::setw(3) << std::setfill('0') << std::right << d_station_id
-			<< " | " << std::setw(Station::d_width_field) << std::setfill(' ') << std::left << d_item_name << "  | "
+			<< " | " << std::setw(d_width_field) << std::setfill(' ') << std::left << d_item_name << "  | "
 			<< std::setw(6) << std::right << std::setfill('0') << d_next_serial_number << " | ";
-
+		
 		if (full)
 		{
+
 			os << std::setw(4) << std::setfill(' ') << std::right << d_items_in_stock << " | "
 				<< d_description;
+		
 		}
-
+		
 		os << std::endl;
 
 	}

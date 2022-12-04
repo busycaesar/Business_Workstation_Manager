@@ -138,10 +138,9 @@ namespace sdds
 					station.updateQuantity();
 					d_list_of_items[i]->d_serial_number = station.getNextSerialNumber();
 					d_list_of_items[i]->d_is_filled = true;
-					filled = true;
 					os << "    Filled " << d_customer_name << ", "
 						<< d_product << " [" << d_list_of_items[i]->d_item_name << "]" << std::endl;
-
+					filled = true;
 				}
 				else
 				{
@@ -165,8 +164,10 @@ namespace sdds
 		for (size_t i = 0; i < d_total_items; i++)
 		{
 
-			os << "[" << std::setw(6) << std::setfill('0') << d_list_of_items[i]->d_serial_number << "] " << std::setw(d_width_field) << std::left << std::setfill(' ') << d_list_of_items[i]->d_item_name << "   - " << (d_list_of_items[i]->d_is_filled ? "FILLED" : "TO BE FILLED") << std::endl;
-
+			os << "[" << std::setw(6) << std::right << std::setfill('0') << d_list_of_items[i]->d_serial_number << "] "
+				<< std::setw(d_width_field) << std::left << std::setfill(' ') << d_list_of_items[i]->d_item_name
+				<< "   - " << (d_list_of_items[i]->d_is_filled ? "FILLED" : "TO BE FILLED") << std::endl;
+		
 		}
 
 	}
