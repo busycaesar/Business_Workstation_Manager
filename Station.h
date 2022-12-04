@@ -48,11 +48,11 @@ namespace sdds
 
 		// QUERIES.
 		const std::string& getItemName() const { return d_item_name; }
-		size_t getNextSerialNumber();
+		size_t getNextSerialNumber() { return d_next_serial_number++; }
 		size_t getQuantity() const { return d_items_in_stock; }
 
 		// METHODS.
-		void updateQuantity() { if (d_items_in_stock > 1)d_items_in_stock--; }
+		void updateQuantity() { if (d_items_in_stock >= 1)d_items_in_stock--; }
 		void display(std::ostream& os, bool full) const;
 
 		// HELPER FUNCTIONS.
