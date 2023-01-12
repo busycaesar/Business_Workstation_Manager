@@ -1,6 +1,6 @@
 # Business_Workstation_Management
 
-## This is the final project of OOP 345(Object-Oriented Software Development Using C++)
+## This is a CLI application which manages the customer’s order at the workstation and also informs the customer if the product is available or not.
 
 # Warning
 
